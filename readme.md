@@ -1,3 +1,14 @@
+# GraphQL Demo
+This projects to demo the features of GraphQL.
+
+### What is GraphQL
+GraphQL is a query language, created by Facebook with the purpose of building client applications based on intuitive and flexible syntax, for describing their data requirements and interactions.
+
+### Benefits of GraphQL
+- Allows client to request a customized (limited or expanded) set of data.
+- Only necessary to have one URL for all data fetching and mutating.
+
+
 ## Running
 Run the application and go the link to access graphiql
 http://localhost:8080/graphiql
