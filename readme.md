@@ -1,5 +1,6 @@
 # GraphQL Demo
-This projects to demo the features of GraphQL.
+This projects to demo the features of GraphQL. [![Build Status](https://travis-ci.org/jjwtan/graphql-java-demo.png?branch=master)](https://travis-ci.org/jjwtan/graphql-java-demo)
+
 
 ### What is GraphQL
 GraphQL is a query language, created by Facebook with the purpose of building client applications based on intuitive and flexible syntax, for describing their data requirements and interactions.
