@@ -5,9 +5,9 @@ import com.jjwtan.graphql.demo.model.Author;
 import com.jjwtan.graphql.demo.model.Book;
 import com.jjwtan.graphql.demo.repository.AuthorRepository;
 import com.jjwtan.graphql.demo.repository.BookRepository;
-import com.jjwtan.graphql.demo.resolver.BookResolver;
-import com.jjwtan.graphql.demo.resolver.Mutation;
-import com.jjwtan.graphql.demo.resolver.Query;
+//import com.jjwtan.graphql.demo.resolver.BookResolver;
+//import com.jjwtan.graphql.demo.resolver.Mutation;
+//import com.jjwtan.graphql.demo.resolver.Query;
 import graphql.ExceptionWhileDataFetching;
 import graphql.GraphQLError;
 import graphql.servlet.GraphQLErrorHandler;
@@ -56,27 +56,27 @@ public class GraphqlJavaDemoApplication {
 		};
 	}
 
-	@Bean
-	public BookResolver authorResolver(AuthorRepository authorRepository) {
-		return new BookResolver(authorRepository);
-	}
-
-	@Bean
-	public Query query(AuthorRepository authorRepository, BookRepository bookRepository) {
-		return new Query(authorRepository, bookRepository);
-	}
-
-	@Bean
-	public Mutation mutation(AuthorRepository authorRepository, BookRepository bookRepository) {
-		return new Mutation(authorRepository, bookRepository);
-	}
+//	@Bean
+//	public BookResolver authorResolver(AuthorRepository authorRepository) {
+//		return new BookResolver(authorRepository);
+//	}
+//
+//	@Bean
+//	public Query query(AuthorRepository authorRepository, BookRepository bookRepository) {
+//		return new Query(authorRepository, bookRepository);
+//	}
+//
+//	@Bean
+//	public Mutation mutation(AuthorRepository authorRepository, BookRepository bookRepository) {
+//		return new Mutation(authorRepository, bookRepository);
+//	}
 
 	@Bean
 	public CommandLineRunner demo(AuthorRepository authorRepository, BookRepository bookRepository) {
 		return (args) -> {
 			Author author = new Author("Herbert", "Schildt");
 			authorRepository.save(author);
-			bookRepository.save(new Book("Java: A Beginner's Guide, Sixth Edition", "0071809252", 728, author));
+//			bookRepository.save(new Book("Java: A Beginner's Guide, Sixth Edition", "0071809252", 728, author));
 			logger.info("Saved sample author and book to db");
 		};
 	}
